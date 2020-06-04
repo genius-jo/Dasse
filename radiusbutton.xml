@@ -1,0 +1,15 @@
+<!--                                          -
+ - 프로그램명 : radiusbutton.xml
+ - 작성자 : 2016039077 전현성
+ - 작성일 : 2020. 05. 27.
+ - 프로그램설명 : 버튼의 색깔과 모양을 변경하기 위한 xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp"></corners>
+            <solid android:color="#FF9999"></solid>
+        </shape>
+
+    </item>
+</selector>
