@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--                                                 -
+ - 프로그램명 : activity_foodinfo.xml
+ - 작성자 : 2016039077 전현성
+ - 작성일 : 2020. 05. 28.
+ - 프로그램설명 : 리스트 클릭 시 제품의 정보를 불러오기 위한 xml  -->
+
+<!--                       2016039077 전현성                   -->
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodinfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/activity_foodinfo_imageview_food"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/burrito" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_foodinfo_textview_store_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="4"
+                    android:background="#00FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="store_name"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/activity_foodinfo_textview_menu_old_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="7"
+                    android:background="#00FFFFFF"
+                    android:gravity="right|center_vertical"
+                    android:text="old_price"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_foodinfo_textview_store_menu_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="4"
+                    android:background="#00FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="menu_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="10pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/activity_foodinfo_textview_menu_discount_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="7"
+                    android:background="#00FFFFFF"
+                    android:gravity="right|center_vertical"
+                    android:text="di_p"
+                    android:textColor="@android:color/black"
+                    android:textSize="10pt"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/activity_foodinfo_button_getcoupon"
+                    android:layout_width="375dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/radiusbutton"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="쿠폰 다운로드"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="#E6E6E6" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="구매 전 확인사항"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="상품구성"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_foodinfo_textview_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="상품구성설명들어갈곳" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="안내사항"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="- 방문 전 연락주시면 빠른 이용이 가능합니다." />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="- 해당 매장만 이용 가능합니다. (타지점 이용 불가)" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="- 쿠폰의 유효기간은 각 매장의 규정에 따릅니다." />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="#E6E6E6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="매장정보"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_foodinfo_textview_store_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="매장 주소 들어갈 곳" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="#E6E6E6" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="- 상단 메뉴 및 가격은 업소에서 제공한 정보를 기준으로 작성되었으며 변동될 수 있습니다." />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="- 메뉴이미지는 상품의 종류에 따라 제공되는 이미지로 실제 음식과 다를 수 있습니다." />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--                       2016039077 전현성                   -->
