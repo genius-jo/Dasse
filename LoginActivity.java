@@ -18,7 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
     /*************************************************
      * 프로그램명 : LoginActivity.java
-     * 작성자 : 2016039077 김종우
+     * 작성자 : 2016039076 김종우
      * 작성일 : 2020.05.23
      * 프로그램설명 : 로그인을 위한 xml과 연결하는 java 파일
      *************************************************/
