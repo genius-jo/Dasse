@@ -3,8 +3,8 @@
 <!--                                                 -
  - 프로그램명 : activity_drawer.xml
  - 작성자 : 2016039076 김종우
- - 작성일 : 2020. 05. 28
- - 프로그램설명 : 왼쪽 스와이프시 drawlayout 실행 xml  -->
+ - 작성일 : 2020. 06. 01
+ - 프로그램설명 : drawlayout 실행 _ 버튼 추가 xml  -->
 
 <!--                       2016039076 김종우                   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -83,6 +83,53 @@
             android:background="#80ffffff"
             android:layout_marginTop="340dp">
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도움말"
+            android:textColor="#ffffff"
+            android:id="@+id/nav_info"
+            android:layout_marginTop="368dp"
+            android:layout_marginLeft="44dp">
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff"
+            android:layout_marginTop="410dp">
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안드로이드 너무 좋아"
+            android:textColor="#ffffff"
+            android:id="@+id/nav_help"
+            android:layout_marginTop="438dp"
+            android:layout_marginLeft="44dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff"
+            android:layout_marginTop="480dp">
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:id="@+id/nav_logout"
+            android:layout_marginTop="550dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="OnClick">
+        </Button>
     </RelativeLayout>
 
 </LinearLayout>
