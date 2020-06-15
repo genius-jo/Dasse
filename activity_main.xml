@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--                                                 -
+ - 프로그램명 : activity_main.xml
+ - 작성자 : 2016039076 김종우
+ - 작성일 : 2020. 05. 28.
+ - 프로그램설명 : 메인화면에서 왼쪽 스와이프시 drawlayout 실행 xml  -->
+
+<!--                       2016039076 김종우                   -->
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +14,7 @@
     android:id="@+id/drawer_layout"
     tools:context=".MainActivity">
 
+    <!--                       2016039076 김종우                   -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,5 +48,7 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--                       2016039076 김종우                   -->
     <include layout="@layout/activity_drawer"/>
 </androidx.drawerlayout.widget.DrawerLayout>
+    <!--                       2016039076 김종우                   -->
