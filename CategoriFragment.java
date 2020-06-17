@@ -1,9 +1,13 @@
 package com.example.dasse;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.dasse.R;
 import android.view.LayoutInflater;
@@ -11,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -21,32 +26,17 @@ import android.widget.Toast;
  */
 public class CategoriFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    ViewPager pager;
 
     public CategoriFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CategoriFragment.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static CategoriFragment newInstance(String param1, String param2) {
         CategoriFragment fragment = new CategoriFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -55,14 +45,13 @@ public class CategoriFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+
         }
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ImageButton btn[]=new ImageButton[7];
+        ImageButton btn[]=new ImageButton[6];
         View rootView = inflater.inflate(R.layout.fragment_categori,container,false);
         btn[0]= (ImageButton)rootView.findViewById(R.id.imageButton1);
         btn[1]= (ImageButton)rootView.findViewById(R.id.imageButton2);
@@ -70,67 +59,117 @@ public class CategoriFragment extends Fragment {
         btn[3]= (ImageButton)rootView.findViewById(R.id.imageButton4);
         btn[4]= (ImageButton)rootView.findViewById(R.id.imageButton5);
         btn[5]= (ImageButton)rootView.findViewById(R.id.imageButton6);
-        btn[6]= (ImageButton)rootView.findViewById(R.id.imageButton7);
+
 
         btn[0].setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v1){
-                MainActivity activity = (MainActivity)getActivity();
-                activity.onFragmentChanged(1);
+                ((MainActivity) getActivity()).callother(0);
+            }
+        });
+        btn[1].setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v1){
+                ((MainActivity) getActivity()).callother(1);
             }
         });
 
-        /*View.OnClickListener listener1 = new View.OnClickListener(){
+        btn[2].setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){
-                MainActivity activity = (MainActivity)getActivity();
-                activity.onFragmentChanged(1);
-                Toast.makeText(getActivity(), "성공", Toast.LENGTH_SHORT).show();
+            public void onClick(View v1){
+                ((MainActivity) getActivity()).callother(2);
             }
-        };*/
-        View.OnClickListener listener2 = new View.OnClickListener(){
+        });
+
+        btn[3].setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){
-                Toast.makeText(getActivity(), "food", Toast.LENGTH_SHORT).show();
+            public void onClick(View v1){
+                ((MainActivity) getActivity()).callother(3);
             }
-        };
-        View.OnClickListener listener3 = new View.OnClickListener(){
+        });
+
+        btn[4].setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){
-                Toast.makeText(getActivity(), "cafe", Toast.LENGTH_SHORT).show();
+            public void onClick(View v1){
+                ((MainActivity) getActivity()).callother(4);
             }
-        };
-        View.OnClickListener listener4 = new View.OnClickListener(){
+        });
+
+        btn[5].setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){
-                Toast.makeText(getActivity(), "bar", Toast.LENGTH_SHORT).show();
+            public void onClick(View v1){
+                ((MainActivity) getActivity()).callother(5);
             }
-        };
-        View.OnClickListener listener5 = new View.OnClickListener(){
+        });
+        /*************************************************
+         * 프로그램명 : CategoriFragment.java
+         * 작성자 : 2016039077 전현성
+         * 작성일 : 2020.06.11
+         * 프로그램설명 : 메인 Fragment 하단의 아이템을 위한 코드
+         *************************************************/
+
+/*********************************************  2016039077 전현성  ***********************************************/
+        // XML 호출
+        final ImageButton foodImage = (ImageButton) rootView.findViewById(R.id.fragment_categori_menu_image1);
+        final TextView storeName = (TextView) rootView.findViewById(R.id.fragment_categori_store_name1);
+        final TextView menuName = (TextView) rootView.findViewById(R.id.fragment_categori_menu_name1);
+        final TextView oldPrice = (TextView) rootView.findViewById(R.id.fragment_categori_old_price1);
+        final TextView discountPrice = (TextView) rootView.findViewById(R.id.fragment_categori_discount_price1);
+
+        final ImageButton foodImage2 = (ImageButton) rootView.findViewById(R.id.fragment_categori_menu_image2);
+        final TextView storeName2 = (TextView) rootView.findViewById(R.id.fragment_categori_store_name2);
+        final TextView menuName2 = (TextView) rootView.findViewById(R.id.fragment_categori_menu_name2);
+        final TextView oldPrice2 = (TextView) rootView.findViewById(R.id.fragment_categori_old_price2);
+        final TextView discountPrice2 = (TextView) rootView.findViewById(R.id.fragment_categori_discount_price2);
+
+        // 호출한 xml에 데이터 세팅
+        foodImage.setImageResource(R.drawable.cbibimbob);
+        storeName.setText("꼬막상회");
+        menuName.setText("꼬막비빔밥");
+        oldPrice.setText("12,000₩");
+        discountPrice.setText("10,000₩");
+
+        foodImage2.setImageResource(R.drawable.gambas);
+        storeName2.setText("청춘호텔");
+        menuName2.setText("감바스");
+        oldPrice2.setText("23,000₩");
+        discountPrice2.setText("21,500₩");
+
+
+        // 첫번째 정보를 눌렀을 때
+        foodImage.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Toast.makeText(getActivity(), "play", Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FoodinfoActivity.class);
+                intent.putExtra("ImgID",R.drawable.cbibimbob);
+                intent.putExtra("StoreName","꼬막상회");
+                intent.putExtra("MenuName","꼬막비빔밥");
+                intent.putExtra("OldPrice","12,000₩");
+                intent.putExtra("DiscountPrice","10,000₩");
+                intent.putExtra("FoodInfo","신선한 꼬막 비빔밥 1인분");
+                intent.putExtra("StoreLocation","충청북도 청주시 흥덕구 복대2동 내수동로 32");
+                startActivity(intent);
             }
-        };
-        View.OnClickListener listener6 = new View.OnClickListener(){
+        });
+
+        // 두번째 정보를 눌렀을 때
+        foodImage2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Toast.makeText(getActivity(), "study", Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FoodinfoActivity.class);
+                intent.putExtra("ImgID",R.drawable.gambas);
+                intent.putExtra("StoreName","청춘호텔");
+                intent.putExtra("MenuName","감바스 알 아히요");
+                intent.putExtra("OldPrice","23,000₩");
+                intent.putExtra("DiscountPrice","21,500₩");
+                intent.putExtra("FoodInfo","감바스 알 아히요 2인");
+                intent.putExtra("StoreLocation","충청북도 청주시 서원구 사직대로 227");
+                startActivity(intent);
             }
-        };
-        View.OnClickListener listener7 = new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Toast.makeText(getActivity(), "etc", Toast.LENGTH_SHORT).show();
-            }
-        };
-       // btn[0].setOnClickListener(listener1);
-        btn[1].setOnClickListener(listener2);
-        btn[2].setOnClickListener(listener3);
-        btn[3].setOnClickListener(listener4);
-        btn[4].setOnClickListener(listener5);
-        btn[5].setOnClickListener(listener6);
-        btn[6].setOnClickListener(listener7);
+        });
+
+
+/*********************************************  2016039077 전현성  ***********************************************/
 
         // Inflate the layout for this fragment
         return rootView;
