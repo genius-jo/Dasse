@@ -1,0 +1,15 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--                                          -
+ - 프로그램명 : logoutbutton.xml
+ - 작성자 : 2016039076 김종우
+ - 작성일 : 2020. 06. 17.
+ - 프로그램설명 : 로그아웃 버튼 변경xml -->
+
+<item>
+    <shape android:shape="rectangle">
+        <corners android:radius="20dp"></corners>
+        <solid android:color="#FF9990"></solid>
+    </shape>
+
+</item>
+</selector>
