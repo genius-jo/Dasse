@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--                                                 -
+ - 프로그램명 : fragment_dashboard.xml
+ - 작성자 : 2016039084 신한솔
+ - 작성일 : 2020. 04. 30
+ - 프로그램설명 : bottomnavigation을 위한 더미 fragment xml  -->
+
+<!--                       2016039084 신한솔                   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"

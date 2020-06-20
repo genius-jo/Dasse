@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--                                                 -
+ - 프로그램명 : activity_for_cafelist.xml
+ - 작성자 : 2016039084 신한솔
+ - 작성일 : 2020. 06. 01
+ - 프로그램설명 : cafelist 출력을 위한 Activity xml  -->
+
+<!--                       2016039084 신한솔                   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,31 +16,29 @@
     android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/textcate1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:text="C A F E"
-        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
-        />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:src="@drawable/top_cafe" />
+
+
+    </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#d4cdcd"/>
-
-    <TextView
-        android:id="@+id/textcate1_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:textSize="5pt"
-        android:text="카페"
-        android:gravity="left"
-        />
 
     <fragment
         android:layout_width="match_parent"
