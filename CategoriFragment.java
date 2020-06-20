@@ -18,12 +18,14 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/*************************************************
+ * 프로그램명 : CategoriFragment.java
+ * 작성자 : 2016039084 신한솔
+ * 작성일 : 2020.05.28
+ * 프로그램설명 : Categori를 보여주는 Fragment Class
+ *************************************************/
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CategoriFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+/*********************************************  2016039084 신한솔  ***********************************************/
 public class CategoriFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     ViewPager pager;
@@ -176,3 +178,5 @@ public class CategoriFragment extends Fragment {
 
     }
 }
+
+/*********************************************  2016039084 신한솔  ***********************************************/

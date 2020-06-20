@@ -3,6 +3,7 @@
  - 작성자 : 2016039077 전현성
  - 작성일 : 2020. 05. 27.
  - 프로그램설명 : 버튼의 색깔과 모양을 변경하기 위한 xml -->
+<!--                       2016039077 전현성                   -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item>
@@ -13,3 +14,5 @@
 
     </item>
 </selector>
+
+    <!--                       2016039077 전현성                   -->

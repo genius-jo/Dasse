@@ -12,17 +12,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import java.util.ArrayList;
-
 /*************************************************
- * 프로그램명 : CafelistFragment.java
- * 작성자 : 2016039084 신한솔
- * 작성일 : 2020.06.03
- * 프로그램설명 : Categorilist를 보여주는 Fragment Class
+ * 프로그램명 : GuiterlistFragment.java
+ * 작성자 : 2016039066 조광식
+ * 작성일 : 2020.06.05
+ * 프로그램설명 : Guiterlist를 보여주는 Fragment
  *************************************************/
 
-/*********************************************  2016039084 신한솔  ***********************************************/
+/*********************************************  2016039066 조광식  ***********************************************/
 
-public class CafelistFragment extends ListFragment {
+public class GuiterlistFragment extends ListFragment {
 
     MemberDataAdapter adapter;
 
@@ -36,17 +35,10 @@ public class CafelistFragment extends ListFragment {
 
         //adapter = new MemberDataAdapter();
 
-        datas.add( new MemberData("Arte", "아메리카노 세트" ,"8,000₩", "6,900₩",
-                "아미리카노 \n 롤케익", "충북 청주시 서원구 내수동로 143 2층", R.drawable.cafe1));
-        datas.add( new MemberData("블루 리프", "달고나 카페라떼", "3,800₩","2,900₩",
-                "달고나 카페라떼 (테이크 아웃)", "충북 청주시 흥덕구 내수동로55번길 15",R.drawable.cafe2));
-        datas.add( new MemberData("YOLK", "톰과제리 치즈케이크", "10,000₩", "8,000₩",
-                "톰과제리 치즈케익크","충북 청주시 흥덕구 성봉로 277", R.drawable.cafe3));
-        datas.add( new MemberData("다밀리", "와플 체리콕", "6,500₩", "4,500₩",
-                "와플 \n 체리콕","충북 청주시 서원구 예체로 5 다밀리",R.drawable.cafe4));
-        datas.add( new MemberData("쿠르쿠르", "딸기 라떼", "5,000₩", "3,500₩",
-                "딸기 라떼 (테이크 아웃)", "충북 청주시 서원구 개신로 24", R.drawable.cafe5));
-
+        datas.add( new MemberData("충대꽃집", "분홍색 꽃" ,"5,000₩", "3,900₩",
+                "분홍색꽃 \n (드라이 플라워)", "충북 청주시 서원구 내수동로 111", R.drawable.guiter1));
+        datas.add( new MemberData("포토 스튜디오", "증명 사진", "8,000₩","7,000₩",
+                "증명사진 (10 매)", "충북 청주시 흥덕구 내수동로 12번길 7",R.drawable.guiter2));
 
         MemberDataAdapter adapter= new MemberDataAdapter(getLayoutInflater(), datas);
         setListAdapter(adapter);
@@ -54,6 +46,7 @@ public class CafelistFragment extends ListFragment {
 
         return super.onCreateView(inflater,container,savedInstanceState);
     }
+/*********************************************  2016039066 조광식  ***********************************************/
 
     /*************************************************
      * 프로그램명 : onListItemClick()
@@ -90,6 +83,4 @@ public class CafelistFragment extends ListFragment {
     }
 }
 /*********************************************  2016039077 전현성  ***********************************************/
-/*********************************************  2016039084 신한솔  ***********************************************/
-
 

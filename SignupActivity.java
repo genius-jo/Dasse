@@ -1,13 +1,15 @@
+
+package com.example.dasse;
 /*************************************************
- * 프로그램명 : LoginActivity.java
+ * 프로그램명 : SignupActivity.java
  * 작성자 : 2016039077 전현성
  * 작성일 : 2020.05.20
  * 프로그램설명 : 회원가입을 위한 xml과 연결하는 java 파일
  *************************************************/
 
 /*********************************************  2016039077 전현성  ***********************************************/
-package com.example.dasse;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -47,6 +49,8 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar a=getSupportActionBar();
+        a.hide();
         setContentView(R.layout.activity_signup);
         // xml과 연동
         name=findViewById(R.id.activity_signup_edittext_name);

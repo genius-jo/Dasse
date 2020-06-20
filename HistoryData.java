@@ -1,25 +1,34 @@
 package com.example.dasse;
+
 /*************************************************
- * 프로그램명 : MemberData.java
+ * 프로그램명 : HistoryData.java
  * 작성자 : 2016039077 전현성 2016039066 조광식
- * 작성일 : 2020.05.26
- * 프로그램설명 : 쿠폰 정보들의 객체 생성
+ * 작성일 : 2020.06.06
+ * 프로그램설명 : 사용된 쿠폰 정보들의 객체 생성
  *************************************************/
 
 /*********************************************  2016039077 전현성 2016039066조광식 ***********************************************/
 
-public class MemberData {
-    String storeName;         //가게이름 저장
-    String menuName;          //메뉴이름 저장
-    String oldPrice;          //이전가격 저장
-    String discountPrice;     //할인가격 저장
-    String foodInfo;          //상품정보 저장
-    String storeLocation;     //상점위치 저장
-    int imgId;                //상품 이미지의 리소스 아이디
 
-    public MemberData(String storeName, String menuName, String oldPrice, String discountPrice, String foodInfo, String storeLocation, int imgId) {
+public class HistoryData {
+
+    private String imgId;                //이미지
+    private String storeLocation;     //상점위치 저장
+    private String foodInfo;          //상품정보 저장
+    private String oldPrice;          //이전가격 저장
+    private String discountPrice;     //할인가격 저장
+    private String menuName;          //메뉴이름 저장
+    private String storeName;         //가게이름 저장
+    private String usedTime;          //이용시간 저장
+
+
+    public HistoryData(){
+
+    }
+
+    public HistoryData(String imgId, String storeLocation, String foodInfo, String oldPrice, String discountPrice, String menuName, String storeName, String usedTime) {
         // TODO Auto-generated constructor stub
-        //생성자함수로 전달받은 Member의 정보를 멤버변수에 저장
+        // 생성자
         this.storeName = storeName;
         this.menuName = menuName;
         this.oldPrice = oldPrice;
@@ -27,9 +36,11 @@ public class MemberData {
         this.foodInfo = foodInfo;
         this.storeLocation = storeLocation;
         this.imgId = imgId;
+        this.usedTime = usedTime;
+
     }
 
-    // get, set 함수 구현
+    //get, set 구현
 
     public void setStoreName(String storeName) {
         this.storeName = storeName;
@@ -55,9 +66,11 @@ public class MemberData {
         this.storeLocation = storeLocation;
     }
 
-    public void setImgId(int imgId) {
-        this.imgId = imgId;
+    public void setUsedTime(String usedTime) {
+        this.usedTime = usedTime;
     }
+
+    public void setImgId(String imgId) { this.imgId = imgId; }
 
     public String getStoreName() {
         return storeName;
@@ -81,9 +94,9 @@ public class MemberData {
 
     public String getStoreLocation() { return storeLocation; }
 
-    public int getImgId() {
-        return imgId;
-    }
+    public String getUsedTime() { return usedTime; }
+
+    public int getImgId() {return Integer.parseInt(imgId);}
 
 }
 

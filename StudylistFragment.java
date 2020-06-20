@@ -1,5 +1,12 @@
 package com.example.dasse;
+/*************************************************
+ * 프로그램명 : StudylistFragment.java
+ * 작성자 : 2016039066 조광식
+ * 작성일 : 2020.06.03
+ * 프로그램설명 : playlist를 보여주는 Fragment Class
+ *************************************************/
 
+/*********************************************  2016039066 조광식  ***********************************************/
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,19 +20,11 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import java.util.ArrayList;
 
-/*************************************************
- * 프로그램명 : CafelistFragment.java
- * 작성자 : 2016039084 신한솔
- * 작성일 : 2020.06.03
- * 프로그램설명 : Categorilist를 보여주는 Fragment Class
- *************************************************/
-
-/*********************************************  2016039084 신한솔  ***********************************************/
-
-public class CafelistFragment extends ListFragment {
+public class StudylistFragment extends ListFragment {
 
     MemberDataAdapter adapter;
 
+    //리스트 형태로 데이터 저장
     ArrayList<MemberData> datas= new ArrayList<MemberData>();
 
     ListView listview;
@@ -36,24 +35,27 @@ public class CafelistFragment extends ListFragment {
 
         //adapter = new MemberDataAdapter();
 
-        datas.add( new MemberData("Arte", "아메리카노 세트" ,"8,000₩", "6,900₩",
-                "아미리카노 \n 롤케익", "충북 청주시 서원구 내수동로 143 2층", R.drawable.cafe1));
-        datas.add( new MemberData("블루 리프", "달고나 카페라떼", "3,800₩","2,900₩",
-                "달고나 카페라떼 (테이크 아웃)", "충북 청주시 흥덕구 내수동로55번길 15",R.drawable.cafe2));
-        datas.add( new MemberData("YOLK", "톰과제리 치즈케이크", "10,000₩", "8,000₩",
-                "톰과제리 치즈케익크","충북 청주시 흥덕구 성봉로 277", R.drawable.cafe3));
-        datas.add( new MemberData("다밀리", "와플 체리콕", "6,500₩", "4,500₩",
-                "와플 \n 체리콕","충북 청주시 서원구 예체로 5 다밀리",R.drawable.cafe4));
-        datas.add( new MemberData("쿠르쿠르", "딸기 라떼", "5,000₩", "3,500₩",
-                "딸기 라떼 (테이크 아웃)", "충북 청주시 서원구 개신로 24", R.drawable.cafe5));
+        //가게 데이터 삽입
+        datas.add( new MemberData("한국 외국어 학원", "1달 프리패스" ,"200,000₩", "160,000₩",
+                "1달 프리패스 (토익)", "충북 청주시 서원구 개신로 100 2층", R.drawable.study1));
+        datas.add( new MemberData("홍쌤 토익", "1년 프리패스", "1,800,000₩","1,600,000₩",
+                "1년 프리패스 (토익)", "충북 청주시 흥덕구 내수동로55번길 15",R.drawable.study2));
+        datas.add( new MemberData("집중 독서실", "1달 이용권", "100,000₩", "80,000₩",
+                "1달 이용권 (자유석)","충북 청주시 흥덕구 성봉로 277", R.drawable.study3));
+        datas.add( new MemberData("A+ 독서실", "1년 이용권", "900,000₩", "700,000₩",
+                "1년 이용권 (지정석)","충북 청주시 서원구 개신로 55 2층",R.drawable.study4));
+        datas.add( new MemberData("내가 최고 독서실", "3달 이용권", "250,000₩", "230,000₩",
+                "3달 이용권 (자유석)", "충북 청주시 서원구 개신로 20 3층", R.drawable.study5));
 
 
+        //adapter 생성
         MemberDataAdapter adapter= new MemberDataAdapter(getLayoutInflater(), datas);
         setListAdapter(adapter);
 
 
         return super.onCreateView(inflater,container,savedInstanceState);
     }
+/*********************************************  2016039066 조광식  ***********************************************/
 
     /*************************************************
      * 프로그램명 : onListItemClick()
@@ -90,6 +92,3 @@ public class CafelistFragment extends ListFragment {
     }
 }
 /*********************************************  2016039077 전현성  ***********************************************/
-/*********************************************  2016039084 신한솔  ***********************************************/
-
-

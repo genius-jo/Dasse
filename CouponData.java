@@ -1,23 +1,30 @@
 package com.example.dasse;
 /*************************************************
- * 프로그램명 : MemberData.java
+ * 프로그램명 : CouponData.java
  * 작성자 : 2016039077 전현성 2016039066 조광식
- * 작성일 : 2020.05.26
+ * 작성일 : 2020.05.28
  * 프로그램설명 : 쿠폰 정보들의 객체 생성
  *************************************************/
 
-/*********************************************  2016039077 전현성 2016039066조광식 ***********************************************/
+/*********************************************  2016039077 전현성 2016039066 조광식 ***********************************************/
 
-public class MemberData {
-    String storeName;         //가게이름 저장
-    String menuName;          //메뉴이름 저장
-    String oldPrice;          //이전가격 저장
-    String discountPrice;     //할인가격 저장
-    String foodInfo;          //상품정보 저장
-    String storeLocation;     //상점위치 저장
-    int imgId;                //상품 이미지의 리소스 아이디
 
-    public MemberData(String storeName, String menuName, String oldPrice, String discountPrice, String foodInfo, String storeLocation, int imgId) {
+public class CouponData {
+
+    private String imgId;                //이미지
+    private String storeLocation;     //상점위치 저장
+    private String foodInfo;          //상품정보 저장
+    private String oldPrice;          //이전가격 저장
+    private String discountPrice;     //할인가격 저장
+    private String menuName;          //메뉴이름 저장
+    private String storeName;         //가게이름 저장
+
+
+    public CouponData(){
+
+    }
+
+    public CouponData(String imgId, String storeLocation, String foodInfo, String oldPrice, String discountPrice, String menuName, String storeName) {
         // TODO Auto-generated constructor stub
         //생성자함수로 전달받은 Member의 정보를 멤버변수에 저장
         this.storeName = storeName;
@@ -27,9 +34,11 @@ public class MemberData {
         this.foodInfo = foodInfo;
         this.storeLocation = storeLocation;
         this.imgId = imgId;
+
     }
 
     // get, set 함수 구현
+
 
     public void setStoreName(String storeName) {
         this.storeName = storeName;
@@ -55,9 +64,7 @@ public class MemberData {
         this.storeLocation = storeLocation;
     }
 
-    public void setImgId(int imgId) {
-        this.imgId = imgId;
-    }
+    public void setImgId(String imgId) { this.imgId = imgId; }
 
     public String getStoreName() {
         return storeName;
@@ -81,10 +88,8 @@ public class MemberData {
 
     public String getStoreLocation() { return storeLocation; }
 
-    public int getImgId() {
-        return imgId;
-    }
+    public int getImgId() {return Integer.parseInt(imgId);}
 
 }
 
-/*********************************************  2016039077 전현성 2016039066조광식 ***********************************************/
+/*********************************************  2016039077 전현성 2016039066 조광식 ***********************************************/

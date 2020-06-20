@@ -20,7 +20,14 @@ public class FoodlistFragment extends ListFragment {
 
     ListView listview;
 
+    /*************************************************
+     * 프로그램명 : onCreateView()
+     * 작성자 : 2016039084 신한솔
+     * 작성일 : 2020.05.30
+     * 프로그램설명 : 쿠폰정보를 출력하는 onCreatView
+     *************************************************/
 
+    /*********************************************  2016039084 신한솔  ***********************************************/
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -44,9 +51,10 @@ public class FoodlistFragment extends ListFragment {
 
         return super.onCreateView(inflater,container,savedInstanceState);
     }
+    /*********************************************  2016039084 신한솔  ***********************************************/
 
     /*************************************************
-     * 프로그램명 : FoodlistFragment.java
+     * 프로그램명 : onListItemClick()
      * 작성자 : 2016039077 전현성
      * 작성일 : 2020.05.28
      * 프로그램설명 : 쿠폰 클릭시 정보 Activity로 데이터를 넘겨주는 함수
