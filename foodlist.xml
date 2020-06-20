@@ -23,6 +23,7 @@
         android:gravity="center"
         android:background="#dddddd"/>
 
+
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
