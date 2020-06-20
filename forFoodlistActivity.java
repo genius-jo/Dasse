@@ -10,7 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+/*************************************************
+ * 프로그램명 : forFoodlistActivity()
+ * 작성자 : 2016039084 신한솔
+ * 작성일 : 2020.06.05
+ * 프로그램설명 : 음식점들의 쿠폰정보를 출력하는 forFoodlistActivity
+ *************************************************/
 
+/*********************************************  2016039084 신한솔  ***********************************************/
 public class forFoodlistActivity extends AppCompatActivity {
 
     @Override
@@ -23,3 +30,4 @@ public class forFoodlistActivity extends AppCompatActivity {
     }
 
 }
+/*********************************************  2016039084 신한솔  ***********************************************/

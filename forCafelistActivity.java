@@ -11,6 +11,15 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
+/*************************************************
+ * 프로그램명 : forCafelistActivity()
+ * 작성자 : 2016039084 신한솔
+ * 작성일 : 2020.06.05
+ * 프로그램설명 : Cafe들의 쿠폰정보를 출력하는 forCafelistActivity
+ *************************************************/
+
+/*********************************************  2016039084 신한솔  ***********************************************/
+
 public class forCafelistActivity extends AppCompatActivity {
 
     @Override
@@ -23,3 +32,4 @@ public class forCafelistActivity extends AppCompatActivity {
     }
 
 }
+/*********************************************  2016039084 신한솔  ***********************************************/
