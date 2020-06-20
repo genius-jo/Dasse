@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ - 프로그램명 : cuponlist.xml
+ - 작성자 : 2016039066 조광식
+ - 작성일 : 2020. 06. 05
+ - 프로그램설명 : 쿠폰 리스트를 띄울 xml  -->
+
+<!--                       2016039066 조광식                   -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="내 쿠폰"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#dddddd"/>
+
+    <ListView
+        android:id="@+id/cuponlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+</LinearLayout>
+    <!--                       2016039066 조광식                   -->
