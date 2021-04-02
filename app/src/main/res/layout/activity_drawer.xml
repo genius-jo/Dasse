@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ - 프로그램명 : activity_drawer.xml
+ - 작성자 : 2016039076 김종우
+ - 작성일 : 2020. 06. 01
+ - 프로그램설명 : drawlayout 실행 _ 버튼 추가 xml  -->
+
+<!--                       2016039076 김종우                   -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:id="@+id/drawerView"
+    android:background="#FF9999">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#FF9999">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="반갑습니다"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/genter_icon"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="50dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="김종우 님"
+            android:textSize="26dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="94dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="환영합니다"
+            android:textSize="12dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="130dp"
+            android:layout_centerHorizontal="true">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff"
+            android:layout_marginTop="270dp">
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dasse"
+            android:textColor="#ffffff"
+            android:id="@+id/nav_ex"
+            android:layout_marginTop="298dp"
+            android:layout_marginLeft="44dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff"
+            android:layout_marginTop="340dp">
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="충북대학교"
+            android:textColor="#ffffff"
+            android:id="@+id/nav_info"
+            android:layout_marginTop="368dp"
+            android:layout_marginLeft="44dp">
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff"
+            android:layout_marginTop="410dp">
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/nav_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="425dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginRight="163dp"
+            android:background="@drawable/logoutbutton"
+            android:text="로그아웃"
+            android:textColor="#ffffff"
+            android:textSize="15dp"></Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="480dp"
+            android:background="#80ffffff"></LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

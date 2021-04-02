@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--                                                 -
+ - 프로그램명 : fragment_categori.xml
+ - 작성자 : 2016039084 신한솔
+ - 작성일 : 2020. 05. 16
+ - 프로그램설명 : categori를 띄우기 위한 fragment xml  -->
+
+<!--                       2016039084 신한솔                   -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_categori"
+    android:gravity="center_vertical"
+
+    tools:context=".CategoriFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/dasse" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30sp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10sp"
+                        android:background="#00ff0000"
+                        android:padding="0dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/food" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Food"
+                        android:textColor="#ff9999"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30sp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_marginBottom="10sp"
+                        android:background="#00ff0000"
+                        android:padding="0dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cafe" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Cafe"
+                        android:textColor="#ff9999"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10sp"
+                        android:background="#00ff0000"
+                        android:padding="0dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/beer" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Beer"
+                        android:textColor="#ff9999"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30sp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:background="#00ff0000"
+                        android:padding="0dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/game" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Game"
+                        android:textColor="#ff9999"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30sp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:background="#00ff0000"
+                        android:padding="0dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/study" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Study"
+                        android:textColor="#ff9999"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_marginRight="10dp"
+                        android:background="#00ff0000"
+                        android:padding="0dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/guitar" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Guitar"
+                        android:textColor="#ff9999"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--                                                 -
+             - 프로그램명 : activity_foodinfobarcode.xml
+             - 작성자 : 2016039077 전현성
+             - 작성일 : 2020. 06. 11.
+             - 프로그램설명 : 메인 fragment에 제품을 띄우기 위한 xml  -->
+
+            <!--                             2016039077 전현성                                   -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:text="What's New?"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="3sp"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:orientation="vertical"
+                        android:weightSum="5">
+
+                        <ImageButton
+                            android:id="@+id/fragment_categori_menu_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:background="#ffffff"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/psybuger" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/fragment_categori_store_name1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="7"
+                                        android:background="#4D000000"
+                                        android:gravity="center_vertical"
+                                        android:text="store_name"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/fragment_categori_old_price1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="bottom|right"
+                                        android:layout_weight="3"
+                                        android:background="#4D000000"
+                                        android:foregroundGravity="right"
+                                        android:gravity="right|center_vertical"
+                                        android:text="old_price"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/fragment_categori_menu_name1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="7"
+                                        android:background="#4D000000"
+                                        android:gravity="center_vertical"
+                                        android:text="menu_name"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="10pt"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/fragment_categori_discount_price1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="3"
+                                        android:background="#4D000000"
+                                        android:gravity="right|center_vertical"
+                                        android:text="discount_price"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="10pt"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:text="Today's Hot"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="3sp"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <ImageButton
+                        android:id="@+id/fragment_categori_menu_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="#ffffff"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psybuger" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/fragment_categori_store_name2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_weight="7"
+                                    android:background="#4D000000"
+                                    android:gravity="center_vertical"
+                                    android:text="store_name"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/fragment_categori_old_price2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="bottom|right"
+                                    android:layout_weight="3"
+                                    android:background="#4D000000"
+                                    android:foregroundGravity="right"
+                                    android:gravity="right|center_vertical"
+                                    android:text="old_price"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/fragment_categori_menu_name2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_weight="7"
+                                    android:background="#4D000000"
+                                    android:gravity="center_vertical"
+                                    android:text="menu_name"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10pt"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/fragment_categori_discount_price2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_weight="3"
+                                    android:background="#4D000000"
+                                    android:gravity="right|center_vertical"
+                                    android:text="discount_price"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10pt"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+    <!--                             2016039077 전현성                                   -->
+
+</LinearLayout>
